@@ -1,0 +1,33 @@
+class AddPoliticians < ActiveRecord::Migration
+  def change
+    create_table :politicians do |t|
+      t.string   :title
+      t.string   :chamber
+      t.string   :first_name
+      t.string   :nickname
+      t.string   :middle_name
+      t.string   :last_name
+      t.string   :name_suffix
+      t.string   :party
+      t.string   :state
+      t.string   :state_name
+      t.integer  :district
+      t.boolean  :in_office
+      t.string   :gender
+      t.string   :birthdate
+      t.string   :term_start
+      t.string   :term_end
+      t.integer  :senate_class
+      t.string   :bioguide_id
+      t.string   :thomas_id
+      t.string   :lis_id
+      t.string   :votesmart_id
+      t.string   :fec_ids
+      t.string   :govtrack_id
+      t.string   :crp_id
+
+
+      t.timestamps
+    end
+  end
+end
