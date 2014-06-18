@@ -2,12 +2,11 @@
 
 <table>
   <thead>
-<!--     <tr>
+    <tr>
       <th>Title</th>
       <th>Chamber</th>
       <th>First name</th>
       <th>Nickname</th>
-      <th>Middle name</th>
       <th>Last name</th>
       <th>Name suffix</th>
       <th>Party</th>
@@ -28,17 +27,16 @@
       <th>Govtrack</th>
       <th>Crp</th>
       <th colspan="3"></th>
-    </tr> -->
+    </tr>
   </thead>
 
   <tbody>
-<!--     <% @politicians.each do |politician| %>
+    <% @politicians.each do |politician| %>
       <tr>
         <td><%= politician.title %></td>
         <td><%= politician.chamber %></td>
-        <td><%= politician.first_name %></td>
+        <td><%= politician.firstname %></td>
         <td><%= politician.nickname %></td>
-        <td><%= politician.middle_name %></td>
         <td><%= politician.last_name %></td>
         <td><%= politician.name_suffix %></td>
         <td><%= politician.party %></td>
@@ -62,7 +60,7 @@
         <td><%= link_to 'Edit', edit_politician_path(politician) %></td>
         <td><%= link_to 'Destroy', politician, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    <% end %> -->
+    <% end %>
   </tbody>
 </table>
 

@@ -1,10 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
 require 'sunlight'
 
 pols = Sunlight::Legislator.all_where(in_office: 'true')
@@ -18,10 +11,3 @@ pols.each do |pol|
             govtrack_id: pol.govtrack_id, crp_id: pol.crp_id}
       Politician.create(hash)
 end
-
-# pols.each do |p|
-#   hash = {}
-#   p.instance_variables.each {|var| hash[var[1..-1].to_sym] = p.instance_variable_get(var) }
-#   Politician.create(hash)
-# end
-
