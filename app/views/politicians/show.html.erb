@@ -1,39 +1,12 @@
 <p id="notice"><%= notice %></p>
 
+<p id='congress-name'>
+  <strong><%= @politician.title %>. <%= @politician.firstname %> <%= @politician.last_name %></strong>
+</p>
+
 <div id='bio-photo'>
   <img src='https://dl.dropboxusercontent.com/u/1500703/buy-congress/images/200x250/<%= @politician.bioguide_id %>.jpg' />
 </div>
-
-<p>
-  <strong>Title:</strong>
-  <%= @politician.title %>
-</p>
-
-<!-- <p>
-  <strong>Chamber:</strong>
-  <%= @politician.chamber %>
-</p> -->
-
-<p>
-  <strong>First name:</strong>
-  <%= @politician.firstname %>
-</p>
-
-<!-- <p>
-  <strong>Nickname:</strong>
-  <%= @politician.nickname %>
-</p> -->
-
-
-<p>
-  <strong>Last name:</strong>
-  <%= @politician.last_name %>
-</p>
-
-<p>
-  <strong>Name suffix:</strong>
-  <%= @politician.name_suffix %>
-</p>
 
 <p>
   <strong>Party:</strong>
