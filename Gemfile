@@ -36,6 +36,11 @@ gem 'geocoder'
 # For database chron jobs
 gem 'whenever'
 
+group :test do
+  gem 'capybara'
+  gem 'factory_girl_rails'
+end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

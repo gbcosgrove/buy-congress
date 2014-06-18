@@ -1,6 +1,9 @@
 ###API Key - Sunlight Foundation
 b34a371adbb94d988029fec07141ed1d
 
+Sunlight::Base.api_key = 'b34a371adbb94d988029fec07141ed1d'
+
+
 ##Process
 ####Pre-Coding
 
