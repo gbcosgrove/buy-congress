@@ -24,7 +24,7 @@ module BuyCongress
       end
 
       def create_politician(args)
-        ar_pol = User.create(args)
+        ar_pol = Politician.create(args)
         build_politician(ar_pol)
       end
 

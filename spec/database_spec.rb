@@ -10,7 +10,9 @@ shared_examples "a database" do
 
 
   it "creates a politician" do
-
+    hash = {title: 'Sen', chamber: 'senate', first_name: 'Greg', last_name: 'Cosgrove', party: 'I'}
+    test = db.create_politician(hash)
+    expect(test).to_not be_nil
     # user = db.create_user(:username => 'alice', :password => 'pass1')
     # expect(user.id).to_not be_nil
     # expect(user.username).to eq 'alice'
@@ -18,7 +20,7 @@ shared_examples "a database" do
     # expect(user.admin?).to eq false
   end
 
-  it "retrieves a user" do
+  it "retrieves a politician by full name" do
     # user = db.create_user(:username => 'bob', :password => 'pass2')
     # retrieved_user = db.get_user(user.id)
     # expect(retrieved_user.username).to eq 'bob'

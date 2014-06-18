@@ -9,22 +9,21 @@ require 'sunlight'
 
 pols = Sunlight::Legislator.all_where(in_office: 'true')
 
-# pols.each do |pol|
-#   pols.each do |p|
-#     hash = {title: p[:title], chamber: p[:chamber], first_name: p[:first_name],
-#             nickname: p[:nickname], middle_name: p[:middle_name], last_name: p[:last_name],
-#             name_suffix: p[:name_suffix], party: p[:party], state: p[:state], state_name: p[:state_name],
-#             district: p[:district], in_office: p[:in_office], gender: p[:gender], birthdate: p[:birthdate],
-#             term_start: p[:term_start], term_end: p[:term_end], senate_class: p[:senate_class],
-#             bioguide_id: p[:bioguide_id], thomas_id: p[:thomas_id], lis_id: p[:lis_id],
-#             votesmart_id: p[:votesmart_id], fec_ids: p[:fec_ids], govtrack_id: p[:govtrack_id],
-#             crp_id: p[:crp_id]}
-#       Politician.create(hash)
-#     end
-# end
-
-pols.each do |p|
-  hash = p.to_h
-  Politician.create(hash)
+pols.each do |pol|
+    hash = {title: pol.title, firstname: pol.firstname,
+            nickname: pol.nickname, last_name: pol.lastname,
+            name_suffix: pol.name_suffix, party: pol.party, state: pol.state,
+            district: pol.district, in_office: pol.in_office, gender: pol.gender, birthdate: pol.birthdate,
+            senate_class: pol.senate_class,
+            bioguide_id: pol.bioguide_id,
+            votesmart_id: pol.votesmart_id, govtrack_id: pol.govtrack_id,
+            crp_id: pol.crp_id}
+      Politician.create(hash)
 end
+
+# pols.each do |p|
+#   hash = {}
+#   p.instance_variables.each {|var| hash[var[1..-1].to_sym] = p.instance_variable_get(var) }
+#   Politician.create(hash)
+# end
 

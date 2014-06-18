@@ -27,6 +27,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'rspec-rails'
+gem 'pry-debugger'
+gem 'pry'
+# gem 'rspec'
 # Access toentiti
 gem 'influence_explorer'
 # Access to sunlight foundation Congress API

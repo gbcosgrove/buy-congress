@@ -3,9 +3,8 @@ class AddPoliticians < ActiveRecord::Migration
     create_table :politicians do |t|
       t.string   :title
       t.string   :chamber
-      t.string   :first_name
+      t.string   :firstname
       t.string   :nickname
-      t.string   :middle_name
       t.string   :last_name
       t.string   :name_suffix
       t.string   :party
@@ -25,6 +24,15 @@ class AddPoliticians < ActiveRecord::Migration
       t.string   :fec_ids
       t.string   :govtrack_id
       t.string   :crp_id
+      t.text     :contact_form
+      t.string   :facebook_id
+      t.string   :fax
+      t.string   :leadership_role
+      t.string   :ocd_id
+      t.text     :office
+      t.string   :phone
+      t.string   :twitter_id
+      t.string   :website
 
 
       t.timestamps
