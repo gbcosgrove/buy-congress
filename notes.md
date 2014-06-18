@@ -24,4 +24,5 @@ b34a371adbb94d988029fec07141ed1d
 
 - Generate a new app: *rails new buy-congress* 
 - Generate a new migration: rails generate migration *migrationName*
-- Create a database: 
+- Create a database: rake db:create
+- Restore to last-known state of db: *bin/rake db:schema:load*

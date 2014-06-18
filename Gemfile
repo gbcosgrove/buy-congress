@@ -31,8 +31,11 @@ gem 'rspec-rails'
 gem 'influence_explorer'
 # Access to sunlight foundation Congress API
 gem 'sunlight'
+gem 'json'
+gem 'geocoder'
 # For database chron jobs
 gem 'whenever'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
