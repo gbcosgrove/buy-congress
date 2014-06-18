@@ -38,10 +38,16 @@ gem 'json'
 gem 'geocoder'
 # For database chron jobs
 gem 'whenever'
+# For styling
+gem 'foundation-rails'
 
 group :test do
   gem 'capybara'
   gem 'factory_girl_rails'
+end
+
+group :development do
+  gem 'rails_layout'
 end
 
 

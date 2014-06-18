@@ -3,10 +3,10 @@ require 'pry'
 
 module BuyCongress
   module Database
-    class DB
+    class Congressdb
 
       def clear_all
-        DB.delete_all
+        Congressdb.delete_all
       end
 
       def initialize
