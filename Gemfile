@@ -36,7 +36,7 @@ gem 'influence_explorer'
 gem 'sunlight'
 gem 'json'
 gem 'geocoder'
-# For database chron jobs
+# For database chron jobse
 gem 'whenever'
 # For styling
 gem 'foundation-rails'

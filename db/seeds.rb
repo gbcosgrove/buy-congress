@@ -1,4 +1,5 @@
 require 'sunlight'
+require 'influence_explorer'
 
 pols = Sunlight::Legislator.all_where(in_office: 'true')
 
@@ -11,3 +12,4 @@ pols.each do |pol|
             govtrack_id: pol.govtrack_id, crp_id: pol.crp_id}
       Politician.create(hash)
 end
+

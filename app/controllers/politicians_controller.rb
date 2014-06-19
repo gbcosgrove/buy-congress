@@ -1,6 +1,7 @@
 require 'date'
 
 class PoliticiansController < ApplicationController
+
   before_action :set_politician, only: [:show, :edit, :update, :destroy]
 
   # GET /politicians
@@ -73,4 +74,5 @@ class PoliticiansController < ApplicationController
     def politician_params
       params.require(:politician).permit(:title, :chamber, :first_name, :nickname, :middle_name, :last_name, :name_suffix, :party, :state, :state_name, :district, :in_office, :gender, :birthdate, :term_start, :term_end, :senate_class, :bioguide_id, :thomas_id, :lis_id, :votesmart_id, :fec_ids, :govtrack_id, :crp_id)
     end
+
 end

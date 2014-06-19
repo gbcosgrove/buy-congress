@@ -5,28 +5,14 @@
     <tr>
       <th>Picture</th>
       <th>Title</th>
-      <!-- <th>Chamber</th> -->
       <th>First name</th>
-      <!-- <th>Nickname</th> -->
       <th>Last name</th>
-      <!-- <th>Name suffix</th> -->
       <th>Party</th>
       <th>State</th>
-      <!-- <th>State name</th> -->
       <th>District</th>
       <th>In office</th>
       <th>Gender</th>
       <th>Birthdate</th>
-      <!-- <th>Term start</th>
-      <th>Term end</th>
-      <th>Senate class</th>
-      <th>Bioguide</th>
-      <th>Thomas</th>
-      <th>Lis</th>
-      <th>Votesmart</th>
-      <th>Fec ids</th>
-      <th>Govtrack</th>
-      <th>Crp</th> -->
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -35,34 +21,19 @@
     <% @politicians.each do |politician| %>
       <tr>
         <td><div id='bio-photo'>
-  <img src='https://dl.dropboxusercontent.com/u/1500703/buy-congress/images/100x125/<%= politician.bioguide_id %>.jpg' />
-</div></td>
+            <img src='https://dl.dropboxusercontent.com/u/1500703/buy-congress/images/100x125/<%= politician.bioguide_id %>.jpg' />
+        </div></td>
         <td><%= politician.title %></td>
-<!--         <td><%= politician.chamber %></td> -->
         <td><%= politician.firstname %></td>
-        <!-- <td><%= politician.nickname %></td> -->
         <td><%= politician.last_name %></td>
-        <!-- <td><%= politician.name_suffix %></td> -->
         <td><%= politician.party %></td>
         <td><%= politician.state %></td>
-        <!-- <td><%= politician.state_name %></td> -->
         <td><%= politician.district %></td>
         <td><%= politician.in_office %></td>
         <td><%= politician.gender %></td>
-        <td><%= localize(politician.birthdate) %>.</td>
-<!--         <td><%= politician.term_start %></td>
-        <td><%= politician.term_end %></td>
-        <td><%= politician.senate_class %></td>
-        <td><%= politician.bioguide_id %></td>
-        <td><%= politician.thomas_id %></td>
-        <td><%= politician.lis_id %></td>
-        <td><%= politician.votesmart_id %></td>
-        <td><%= politician.fec_ids %></td>
-        <td><%= politician.govtrack_id %></td>
-        <td><%= politician.crp_id %></td> -->
+        <td><%= politician.birthdate %></td>
         <td><%= link_to 'Show', politician %></td>
-        <td><%= link_to 'Edit', edit_politician_path(politician) %></td>
-        <td><%= link_to 'Destroy', politician, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
       </tr>
     <% end %>
   </tbody>
