@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20140617195557) do
     t.integer  "district"
     t.boolean  "in_office"
     t.string   "gender"
-    t.string   "birthdate"
+    t.datetime "birthdate"
     t.string   "term_start"
     t.string   "term_end"
     t.integer  "senate_class"
