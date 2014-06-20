@@ -42,7 +42,7 @@
 
 // We use these to control various global styles
 // $body-bg: #fff;
-// $body-font-color: #222;
+// $body-font-color: black;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -1078,15 +1078,16 @@
 
 // Tables
 
-// $include-html-table-classes: $include-html-classes;
+//$include-html-table-classes: $include-html-classes;
 
 // These control the background color for the table and even rows
-// $table-bg: #fff;
-// $table-even-row-bg: #f9f9f9  ;
+
+//$table-bg: #00c;
+//$table-even-row-bg: #1a6;
 
 // These control the table cell border style
 // $table-border-style: solid;
-// $table-border-size: 1px;
+// $table-border-size: 2px;
 // $table-border-color: #ddd;
 
 // These control the table head styles
@@ -1177,7 +1178,7 @@
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
+// $topbar-bg-color: #f00;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin

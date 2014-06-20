@@ -15,14 +15,14 @@ module PoliticiansHelper
   def retrieve_top_industries(firstname, lastname)
     eid = retrieve_entity_id(firstname, lastname)
     url = "aggregates/pol/" + eid + "/contributors/industries.json"
-    options = {:cycle => '2012', :limit=>'10'}
+    options = {:cycle => '2012', :limit=>'30'}
     InfluenceExplorer.request(url, options)
   end
 
   def retrieve_top_contributors(firstname, lastname)
     eid = retrieve_entity_id(firstname, lastname)
     url = 'aggregates/pol/' + eid + '/contributors.json'
-    options = {:cycle => '2012', :limit=>'10'}
+    options = {:cycle => '2012', :limit=>'30'}
     InfluenceExplorer.request(url, options)
   end
 

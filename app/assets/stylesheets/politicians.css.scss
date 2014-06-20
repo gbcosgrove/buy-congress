@@ -7,11 +7,45 @@
   font-size: 2em;
 }
 
-#donors {
-  background-color: 0 auto;
+body {
+  font-family: Helevetica neue;
 }
 
+
+
 .t-head {
-  font-family: Arial;
+  font-family: Helevetica Neue;
   font-stretch: semi-condensed;
 }
+
+.full {
+  width: 100%;
+}
+
+nav {
+  background: transparent;
+  width: 100%;
+}
+
+nav .button {
+      border: 0;
+      background: transparent;
+      -webkit-box-shadow: 0;
+      -moz-box-shadow: 0;
+      box-shadow: 0;
+      font-size: 1.2em;
+      color: rgba(255, 255, 255, 0.8);
+      text-transform: uppercase;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    nav .button:hover {
+      background: #0d5b28;
+      color: white;
+    }
+    nav .button:active {
+      -webkit-box-shadow: 0px 4px 0px #a74d46;
+      -moz-box-shadow: 0px 4px 0px #a74d46;
+      box-shadow: 0px 4px 0px #a74d46;
+      background: #e78129;
+    }

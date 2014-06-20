@@ -10,6 +10,26 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require jquery.ui.core
+ *= require jquery.ui.theme
+ *= require dataTables/jquery.dataTables.foundation
+ *= require dataTables/jquery.dataTables
  *= require_tree .
  *= require_self
+ *= require foundation_and_overrides
+
  */
+
+table, tr, td {
+  border: 1px solid #8C8C8C;
+}
+
+body {
+  background: white;
+}
+
+h1 {
+  text-align: center;
+  font-family: Helvetica;
+  color: black;
+}

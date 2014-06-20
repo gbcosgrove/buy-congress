@@ -1,0 +1,100 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#index-background {
+  background: url('https://dl.dropboxusercontent.com/u/1500703/buy-congress/logos/congress-logo-left.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+.search-box {
+  float: right;
+  margin-right: 9%;
+  margin-top: 10%;
+}
+
+/* Styles for search dropdown */
+.head-left {
+  float: right;
+}
+
+.top-bar {
+  background: transparent;
+}
+Ï
+.columns, .column, .form-centered, main {
+  position: relative;
+  padding-top: 0.9375rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+.search {
+  position: relative;
+  padding-top: 41px;
+  margin-bottom: 0;
+}
+.search input {
+  padding-left: 100px;
+}
+.search .keyword {
+  position: absolute;
+  width: 100px;
+  margin-left: 10px;
+  margin-top: 17px;
+}
+.search i {
+  position: absolute;
+  margin-left: 207px;
+  font-size: 30px;
+  line-height: 50px;
+  color: #ccc;
+}
+.search .search-field {
+  height: 50px;
+}
+.search .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #2ba6cb;
+  margin-left: 71px;
+  margin-top: -10px;
+}
+
+#drop3.content.open {
+  position: absolute !important;
+  top: 30px !important;
+  left: -10px !important;
+  width: 120% !important;
+}
+
+nav .button {
+      border: 0;
+      background: transparent;
+      -webkit-box-shadow: 0;
+      -moz-box-shadow: 0;
+      box-shadow: 0;
+      font-size: 1.4em;
+      color: black;
+      text-transform: uppercase;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    nav .button:hover {
+      background: #0d5b28;
+      color: white;
+    }
+    nav .button:active {
+      -webkit-box-shadow: 0px 4px 0px #a74d46;
+      -moz-box-shadow: 0px 4px 0px #a74d46;
+      box-shadow: 0px 4px 0px #a74d46;
+      background: #e78129;
+    }
+

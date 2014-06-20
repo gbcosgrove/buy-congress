@@ -1,36 +1,35 @@
 <h1>Listing politicians</h1>
 
-<table>
+<table class="nice-table">
   <thead>
     <tr>
       <th>Picture</th>
       <th>Title</th>
-      <th>First name</th>
-      <th>Last name</th>
+      <th>Name</th>
       <th>Party</th>
       <th>State</th>
       <th>District</th>
-      <th>In office</th>
-      <th>Gender</th>
+      <!-- <th>In office</th>
+      <th>Gender</th> -->
       <th>Birthdate</th>
-      <th colspan="3"></th>
+      <!-- <th colspan="3"></th> -->
+      <th>Link</th>
     </tr>
   </thead>
 
   <tbody>
     <% @politicians.each do |politician| %>
       <tr>
-        <td><div id='bio-photo'>
+        <td>
             <img src='https://dl.dropboxusercontent.com/u/1500703/buy-congress/images/100x125/<%= politician.bioguide_id %>.jpg' />
-        </div></td>
+        </td>
         <td><%= politician.title %></td>
-        <td><%= politician.firstname %></td>
-        <td><%= politician.last_name %></td>
+        <td><%= politician.firstname %> <%= politician.last_name %></td>
         <td><%= politician.party %></td>
         <td><%= politician.state %></td>
         <td><%= politician.district %></td>
-        <td><%= politician.in_office %></td>
-        <td><%= politician.gender %></td>
+        <!-- <td><%= politician.in_office %></td> -->
+        <!-- <td><%= politician.gender %></td> -->
         <td><%= politician.birthdate %></td>
         <td><%= link_to 'Show', politician %></td>
 

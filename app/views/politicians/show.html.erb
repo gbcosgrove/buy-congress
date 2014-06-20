@@ -22,12 +22,9 @@
           <strong>In office:</strong>
           <%= @politician.in_office %>
           <br>
-          <strong>Gender:</strong>
-          <%= @politician.gender %>
-          <br>
           <strong>Birthdate:</strong>
           <%= @politician.birthdate %>
-   <!--        <br>
+          <br>
           <strong>Bioguide:</strong>
           <%= @politician.bioguide_id %>
           <br>
@@ -38,7 +35,7 @@
           <%= @politician.govtrack_id %>
           <br>
           <strong>Crp:</strong>
-          <%= @politician.crp_id %> -->
+          <%= @politician.crp_id %>
           <br>
       </div>
       <div>
@@ -47,7 +44,7 @@
   </div>
 
   <div class="large-8 columns" id="donors">
-      <table>
+      <table class="nice-table">
         <h3>Top Donor Categories</h3>
         <thead class="t-head">
           <tr>
@@ -72,7 +69,7 @@
           </tbody>
       </table>
 
-      <table>
+      <table class="nice-table">
         <h3>Top Donor Organizations</h3>
         <thead class="t-head">
           <tr>

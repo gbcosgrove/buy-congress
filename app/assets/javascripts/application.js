@@ -12,9 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require dataTables/jquery.dataTables
 //= require turbolinks
+//= require dataTables/jquery.dataTables.foundation
 //= require foundation
 //= require_tree .
-$(function() {
-  $(document).foundation();
+
+$(function(){ $(document).foundation(); });
+
+$('.datatable').dataTable({
+  "sPaginationType": "foundation"
 });
